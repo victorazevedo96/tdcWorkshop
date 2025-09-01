@@ -9,10 +9,12 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
   },
- server: {
+  server: {
     port: 8080,
     strictPort: true,
     host: true,
-    origin: "http://tdc-workshop-app0910.eastus.cloudapp.azure.com:8080/",
+    cors: {
+      origin: true,
+    },
   },
 })
