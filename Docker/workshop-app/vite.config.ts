@@ -13,6 +13,6 @@ export default defineConfig({
     port: 8080,
     strictPort: true,
     host: true,
-    origin: "http://172.190.10.232:8080",
+    origin: "http://tdc-workshop-app0910.eastus.cloudapp.azure.com:8080/",
   },
 })
