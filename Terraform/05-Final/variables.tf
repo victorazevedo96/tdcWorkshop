@@ -38,7 +38,6 @@ variable "admin_username" {
 variable "domain_name_label" {
   type        = string
   description = "Domain name label for the public IP"
-  default     = "tdc-workshop-app0910"
 }
 
 # Local variables
