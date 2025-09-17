@@ -1,6 +1,6 @@
 # Input Variables
 variable "project" {
-  type        = string
+  type        =  string
   description = "Name of the resource group"
   default     = "workshop"
 }
@@ -21,7 +21,7 @@ variable "environment" {
 locals {
   common_tags = {
     Environment = var.environment
-    Project     = "Workshop"
+    Project     = var.project
     ManagedBy   = "Terraform"
   }
   suffix = "rg"

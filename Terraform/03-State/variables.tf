@@ -1,7 +1,7 @@
 variable "resource_group_name" {
   type        = string
   description = "Name of the resource group"
-  default     = "workshop-rg"
+  default     = "state-rg"
 }
 
 variable "location" {
@@ -23,5 +23,5 @@ locals {
     ManagedBy   = "Terraform"
   }
 
-  prefix = "${var.environment}-${local.common_tags.Project}"
+  prefix = "${var.resource_group_name}-${local.common_tags.Project}"
 }
